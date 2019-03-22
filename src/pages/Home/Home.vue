@@ -12,6 +12,7 @@
             </router-link>
         </Head>
         <Banner/>
+        <ShopList/>
     </div>
 </template>
 
@@ -19,12 +20,15 @@
 import Head from "@/components/Head/Head"
 import Bmaps from "@/components/Bmaps/Bmaps"
 import Banner from "@/components/Banner/Banner"
+import ShopList from "@/components/ShopList/ShopList"
+
 
 export default {
     components:{
         Head,
         Bmaps,
-        Banner
+        Banner,
+        ShopList
     },
     data() {
         return {

@@ -3,7 +3,9 @@
         <Head coordinates="我的"/>
         <section class="profile-num">
             <section>
-                <span class="user"><i class="iconfont icon-seeusero"></i></span>
+                <router-link to="/user">
+                    <span  class="user"><i class="iconfont icon-seeusero"></i></span>
+                </router-link>
                 <div>
                     <p>13413141269</p>
                     <p>暂无绑定号码</p>

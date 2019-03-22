@@ -20,19 +20,25 @@ import Swiper from 'swiper'
 import 'swiper/dist/css/swiper.min.css'
 import {mapState} from "vuex"
 export default {
+        created(){
+            this.$store.dispatch("getData")
+        },
 		mounted(){
-            this.$store.dispatch("getData"),
-			new Swiper(".swiper-container",{
-                loop: true, // 循环模式选项    
-                // 如果需要分页器
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true
-                },
-                autoplay:2000,
-                paginationClickable: true,
-                autoplayDisableOnInteraction: false
-            });
+            var _than =this
+            _than.$nextTick(() =>{
+                new Swiper(".swiper-container",{
+                    loop: true, // 循环模式选项    
+                    // 如果需要分页器
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true
+                    },
+                    autoplay:2000,
+                    paginationClickable: true,
+                    autoplayDisableOnInteraction: false
+                });
+            })
+			
         },
         computed:{
             ...mapState(["banner"]),
@@ -61,6 +67,9 @@ export default {
     margin-top: .9rem;
     background: #fff;
     font-size: .3rem;
+    .swiper-container{
+        height: 3rem;
+    }
     .swiper-item{
         width: 25%;
         text-align: center;

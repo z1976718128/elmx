@@ -10,7 +10,7 @@
             <span class="item-icon">
 				<i class="iconfont icon-sousuo"></i>
 			</span>
-			<span class="last_span">搜索</span>
+			<span class="last_span">发现</span>
         </div>
         <div  @click="goto('/order')" :class="{action:'/order' == $route.path}">
             <span class="item-icon">

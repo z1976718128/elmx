@@ -6,8 +6,7 @@ import Order from "@/pages/Order/Order"
 import Profile from "@/pages/Profile/Profile"
 import Seach from "@/pages/Seach/Seach"
 import Login from "@/pages/Login/Login"
-
-
+import ShopStore from "@/pages/ShopStore/ShopStore"
 
 Vue.use(Router)
 
@@ -50,6 +49,16 @@ export default new Router({
       path:"/login",
       //路由懒加载
       component: (resolve) => require(['@/pages/Login/Login.vue'],resolve),
+    },
+    {
+      path:"/shopstore",
+      //路由懒加载
+      component: (resolve) => require(['@/pages/ShopStore/ShopStore.vue'],resolve),
+    },
+    {
+      path:"/user",
+      //路由懒加载
+      component: (resolve) => require(['@/pages/User/User.vue'],resolve),
     },
     //默认显示路由
     {
