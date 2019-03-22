@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>elm</title>
+    <!--引入reset-->
+    <link rel="stylesheet" type="text/css" href="static/css/reset.css"/>
+    <!--引入iconfont-->
+    <link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_938355_yago8zm0hxh.css"/>
+    <!-- 引入logo -->
+    <link rel="shortcut icon"  href="/static/imgs/timg.jpg"/>
+    
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- 引入百度api -->
+    <script  type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=Y8VTZFIjLbPusIGNNqQRvzlvgRQ4dRTP" ></script>
+    <!-- rem -->
+    <script src="static/js/rem.js"></script>
+    <!--解决点击事件延迟0.3s-->
+    <script src="https://as.alipayobjects.com/g/component/fastclick/1.0.6/fastclick.js"></script>
+    <script>
+    	if ('addEventListener' in document) {
+			    document.addEventListener('DOMContentLoaded', function() {
+			        FastClick.attach(document.body);
+			    }, false);
+			}
+    </script>
+  </body>
+</html>
