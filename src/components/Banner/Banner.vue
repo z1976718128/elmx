@@ -17,18 +17,21 @@
 
 <script>
 import Swiper from 'swiper'
+import 'swiper/dist/css/swiper.min.css'
 import {mapState} from "vuex"
 export default {
-		mounted:function(){
+		mounted(){
             this.$store.dispatch("getData"),
 			new Swiper(".swiper-container",{
                 loop: true, // 循环模式选项    
                 // 如果需要分页器
                 pagination: {
-                el: '.swiper-pagination'
+                    el: '.swiper-pagination',
+                    clickable: true
                 },
                 autoplay:2000,
                 paginationClickable: true,
+                autoplayDisableOnInteraction: false
             });
         },
         computed:{
@@ -53,7 +56,6 @@ export default {
 </script>
 
 <style lang="less" scoped>
-@import 'swiper/dist/css/swiper.min.css';
 .banner{
     width: 100%;
     margin-top: .9rem;
