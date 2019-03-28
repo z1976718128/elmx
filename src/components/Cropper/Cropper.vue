@@ -1,13 +1,13 @@
 <template>
   <div id="demo" class="cropperImg">
-
       <div v-show="panel">
         <img id="image" :src="url" alt="Picture" style="width:1rem;height:1rem;">
       </div>
-    <div>
+    <div>   
+
         <!-- 上传按钮 -->
-        <div style="opacity:1;width:100%;position:absolute;top:0;right:0;height:56px;">
-          <input type="file" id="change" accept="image" @change="change" style="height:56px;">
+        <div style="opacity:0;width:100%;position:absolute;top:0;right:0;height:1rem;z-index:2;">
+          <input type="file" id="change" accept="image" @change="change" style="width:100%; height:100%;position:absolute;right:.2rem;" >
           <label for="change"></label>
         </div>
     </div>

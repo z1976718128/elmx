@@ -17,6 +17,10 @@ Vue.use(ElementUI);
 //引入store
 import {store} from "@/store/store"
 
+//引入layer 调用this.$layer.msg("app")
+import layer from 'vue-layer'
+Vue.prototype.$layer = layer(Vue);
+
 Vue.config.productionTip = false
 
 

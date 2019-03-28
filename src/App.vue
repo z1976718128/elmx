@@ -11,7 +11,8 @@ import Navgition from "@/components/Navgition/Navgition"
 export default {
   components:{
     Navgition
-  }
+  },
+  
 }
 </script>
 
@@ -20,5 +21,6 @@ html,body{
     height: 100%;
     width: 100%;
     background-color: #F5F5F5;
+    overflow: hidden;
 }
 </style>
