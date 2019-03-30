@@ -4,7 +4,7 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide" v-for="(banner,index) in cateArr" :key="index">
                     <router-link tag="div" :to="{path:'/seach',query:{userid:banner.id}}" class="swiper-item" v-for="(banner,index) in banner" :key="index">
-                        <img :src="banner.img" alt=""><br/>
+                        <img v-lazy="banner.img" alt=""><br/>
                         <span>{{banner.name}}</span>
                     </router-link>
                 </div>

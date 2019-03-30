@@ -4,12 +4,12 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <img src="../../assets/1.jpg">
-                    <p class="start_p" @click.prevent="goto('/home')">立即体验</p>
                 </div>
                 <div class="swiper-slide" ><img src="../../assets/2.jpeg"></div>
                 <div class="swiper-slide" >
                     <img src="../../assets/3.jpg">
                     <p class="right_P" @click="goto('/home')"><span>{{contTime}}</span>跳过</p>
+                    <p class="start_p" @click.prevent="goto('/home')">立即体验</p>
                 </div>
             </div>
             <!-- 如果需要分页器 -->
@@ -90,9 +90,12 @@ export default {
         color: #fff;
         font-size: .5rem;
         position:absolute;
-        bottom: 10%;
+        top: 40%;
         left: 50%;
-        transform: translate(-50%)
+        transform: translate(-50%);
+        background: rgba(0,0,0,0.7);
+        border-radius: 6px;
+
     }
     .right_P{
         color: #fff;
@@ -103,6 +106,9 @@ export default {
         border: 1px solid #666;
         background: rgba(0,0,0,0.7);
         border-radius: 4px;
+    }
+    .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+        bottom: 1.8rem;
     }
 }
 </style>

@@ -3,7 +3,7 @@
         <h2><i class="iconfont icon-xuanxiang"></i>附近商家</h2>
         <div class="shop_item" v-for="(shoplist,index) in sData.shopList" :key="shoplist.id" @click="gotoShop(shoplist.id)">
                 <div class="images">
-                    <img :src="shoplist.imgs">
+                    <img v-lazy="shoplist.imgs">
                 </div>
                 <section>
                     <p>
@@ -80,6 +80,10 @@ export default {
             img{
                 width: 1.3rem;
                 height: 1.3rem;
+            }
+            image[lazy=loading] {
+                width: .8rem;
+                height: .8rem;
             }
         }
         section{
