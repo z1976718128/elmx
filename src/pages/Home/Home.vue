@@ -10,6 +10,10 @@
             <router-link to="/login" slot="right">
                 <span class="right">登录</span>
             </router-link>
+            <router-link to="/seach">
+                <el-input placeholder="请输入商家或美食名称">
+                </el-input>
+            </router-link>>
         </Head>
         <Banner/>
         <ShopList/>

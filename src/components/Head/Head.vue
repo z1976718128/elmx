@@ -4,6 +4,7 @@
         <slot name="city"></slot>
         <slot class="coor"><span>{{coordinates}}</span></slot>
         <slot name="right"></slot>
+        <slot name="seach"></slot>
     </div>
 </template>
 

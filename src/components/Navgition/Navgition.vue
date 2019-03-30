@@ -6,7 +6,7 @@
 			</span>
 			<span class="last_span">首页</span>
         </div>
-        <div  @click="goto('/seach')" :class="{action:'/seach' == $route.path}">
+        <div  @click="goto('/found')" :class="{action:'/found' == $route.path}">
             <span class="item-icon">
 				<i class="iconfont icon-sousuo"></i>
 			</span>

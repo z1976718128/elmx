@@ -64,7 +64,7 @@ export default {
 <style lang="less" scoped>
 .banner{
     width: 100%;
-    margin-top: .9rem;
+    margin-top: 1.9rem;
     background: #fff;
     font-size: .3rem;
     .swiper-container{

@@ -8,6 +8,8 @@ import Seach from "@/pages/Seach/Seach"
 import Login from "@/pages/Login/Login"
 import ShopStore from "@/pages/ShopStore/ShopStore"
 import StartPage from "@/pages/StartPage/StartPage"
+import Found from "@/pages/Found/Found"
+
 
 
 Vue.use(Router)
@@ -35,9 +37,7 @@ export default new Router({
       path:"/seach",
       //路由懒加载
       component: () => import('@/pages/Seach/Seach.vue'),
-      meta: { 
-        showFoot:true
-       }
+      
     },
     {
       path:"/profile",
@@ -61,6 +61,14 @@ export default new Router({
       path:"/user",
       //路由懒加载
       component: () => import('@/pages/User/User.vue'),
+    },
+    {
+      path:"/found",
+      //路由懒加载
+      component: () => import('@/pages/Found/Found.vue'),
+      meta: { 
+        showFoot:true
+       }
     },
     //引导页
     {

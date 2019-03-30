@@ -1,12 +1,7 @@
 <template>
     <div class="seach">
-        <Head coordinates="发现"/>
-        <div style="margin-top: 50px;">
-            <el-input placeholder="请输入商家或美食名称" v-model="input4">
-                <template slot="append">搜索</template>
-            </el-input>
-            <input type="text" v-model="input4">
-        </div>
+        <Head coordinates="搜索"/>
+        
     </div>
 </template>
 
@@ -18,7 +13,7 @@ export default {
     },
     data () {
         return {
-            input4:""
+            
         }
     }
 }
