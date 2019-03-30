@@ -67,8 +67,8 @@ export default {
 			      //联网请求
 			    this.axios.get("/api/sData", {
 			        params: {
-			          num: page.num, //页码
-			          size: page.size //每页长度
+			          num: 2, //页码
+			          size: 4 //每页长度
 			        }
 			      }).then((response)=> {
                     //请求的列表数据
@@ -146,15 +146,15 @@ export default {
 <style lang="less" scoped>
 .shopList{
     position: relative;
-    .mescroll {
-        position: absolute;
-        top:1rem;
-        height: auto;
-    }
     width: 100%;
-    height: auto;
+    height: 10rem;
     margin-top: .5rem; 
     background: #fff;
+    // .mescroll {
+    //     position: absolute;
+    //     top:1rem;
+    //     height: auto;
+    // }
     h2{
         font-size: .4rem;
         padding:.3rem; 
